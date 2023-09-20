@@ -44,7 +44,7 @@ while isconverged==0 && it <= max_iteration
     seed_map=CAP_norm{it}(seedmask,:);
 
     
-    newseed=repmat(seedmask,1,ik); %% the new seed has ik parcels
+    newseed=repmat(double(seedmask),1,ik); %% the new seed has ik parcels
     newseed(seedmask==1,:)=seed_map;
     
     
