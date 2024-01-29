@@ -116,7 +116,7 @@ end
 
 
 %% 8. Main
-for kinvestigate = 1 : size(K_all)
+for kinvestigate = 1 : length(K_all)
 seed_vol{1,1}=logical(seedmask);
 seedmask=logical(seedmask);   
 ik=K_all(kinvestigate);
@@ -220,7 +220,7 @@ mat_save.idx=idx; clear idx;
 mat_save.ind_all=ind_all; clear ind_all;
 mat_save.iss_all=iss_all; clear iss_all;
 mat_save.mean_dis=mean_dis; %clear mean_dis;
-mat_save.mean_dis_cap_first=mean_dis_cap_first;
+%mat_save.mean_dis_cap_first=mean_dis_cap_first;
 mat_save.seed_vol=seed_vol; clear seed_vol;
 mat_save.SUMD=SUMD; clear SUMD;
 mat_save.lastXON=Xon; clear Xon frames;
