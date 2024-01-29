@@ -1,10 +1,10 @@
 clear all
 close all
 %%%
-serverdef='/media/miplab-nas2/';
+serverdef='/server/name';
 
 %% 1. Path definition
-SPM_path=fullfile(filesep,serverdef,'Code','Younes','spm12');
+SPM_path=fullfile(filesep,serverdef,'Path','to','spm12');
 TbCAPs_path=fullfile('./functions/tbCAPs_functions');
 mCAPs_path=fullfile('./functions');
 
